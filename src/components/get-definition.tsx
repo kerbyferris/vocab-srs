@@ -5,6 +5,10 @@ import AddFlashcard from "./add-flashcard";
 // - type dictionary api response (nested types?)
 // - handle api error
 // - clear input when getting definition
+// - handle no definition found
+// - field to drop in manual definition when none is found
+// - web scrape-ish for wikipedia/SEP?
+// - do I really need to refetch on blur?
 
 const GetDefinition = () => {
   const [word, setWord] = useState("");

@@ -7,6 +7,7 @@ import { trpc } from "../utils/trpc";
 // - buttons to set difficulty
 // - route for updating flashcard with difficulty
 // - way to run timer from when a card becomes visible?
+// - global menu
 
 const Study: NextPage = () => {
   const { data: flashcards } = trpc.flashcard.getFlashcards.useQuery();
