@@ -22,3 +22,12 @@ model Word {
   id   String @id @default(cuid())
   word String @db.VarChar(200)
 }
+
+model FlashCard {
+  id         String  @id @default(cuid())
+  word       String  @db.VarChar(200)
+  definition String
+  front      String?
+  back       String?
+  interval   Float?
+}
