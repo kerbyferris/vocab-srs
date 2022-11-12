@@ -5,6 +5,9 @@ import WordCard from "../components/word-card";
 // TODO:
 // - style this
 // - nice font?
+// - deploy with vercel
+// - react native in repo
+// - redux?
 
 import { trpc } from "../utils/trpc";
 

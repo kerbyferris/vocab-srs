@@ -2,13 +2,16 @@ import { useState } from "react";
 import AddFlashcard from "./add-flashcard";
 
 // TODO:
+// - clear input on getDefinition
 // - type dictionary api response (nested types?)
 // - handle api error
-// - clear input when getting definition
 // - handle no definition found
+// - handle multiple definitions found
 // - field to drop in manual definition when none is found
 // - web scrape-ish for wikipedia/SEP?
 // - do I really need to refetch on blur?
+// - where to put this fetch?
+// - response as editable?
 
 const GetDefinition = () => {
   const [word, setWord] = useState("");
