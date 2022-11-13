@@ -16,17 +16,12 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <main className="flex flex-col items-center justify-center p-4">
-        <h1 className="text-5xl font-extrabold leading-normal text-gray-700 md:text-[5rem]">
-          Vocab SRS
-        </h1>
-        <GetDefinition />
-        <div className="flex-col">
-          {words?.map(({ word, definition, id }) => (
-            <WordCard word={word} definition={definition} id={id} key={id} />
-          ))}
-        </div>
-      </main>
+      <GetDefinition />
+      <div className="grid gap-3">
+        {words?.map(({ word, definition, id }) => (
+          <WordCard word={word} definition={definition} id={id} key={id} />
+        ))}
+      </div>
     </>
   );
 };
