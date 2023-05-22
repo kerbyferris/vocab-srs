@@ -8,13 +8,13 @@ type AddFlashcardProps = {
   interval: number;
 };
 
-const AddFlashcard = ({
+const AddFlashcard: React.FC<AddFlashcardProps> = ({
   word,
   definition,
   front,
   back,
   interval,
-}: AddFlashcardProps) => {
+}) => {
   const ctx = trpc.useContext();
   const { mutate: addFlashcard } = trpc.flashcard.addFlashcard.useMutation({
     onSuccess: () => ctx.invalidate(),

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AddFlashcard from "./add-flashcard";
+import Button from "./basic-button";
 
 // TODO:
 // - clear input on getDefinition
@@ -45,9 +46,14 @@ const GetDefinition = () => {
   };
 
   return (
-    <div>
-      <input onChange={handleInput} placeholder="Word" />
-      <button onClick={handleGetDefinition}>Get Definition</button>
+    <div className="grid">
+      <input
+        className="border-2 border-gray-300 p-2"
+        onChange={handleInput}
+        placeholder="Word"
+      />
+      <Button handler={handleGetDefinition} text="Look up Word" />
+
       {definition && (
         <div>
           <span>{word}:</span>

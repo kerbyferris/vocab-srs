@@ -3,7 +3,6 @@ import GetDefinition from "../components/get-definition";
 import WordCard from "../components/word-card";
 
 // TODO:
-// - style this
 // - nice font?
 // - deploy with vercel
 // - react native in repo
